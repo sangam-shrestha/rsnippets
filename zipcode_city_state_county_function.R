@@ -1,4 +1,7 @@
-#create
+#A function that will import a zip file
+#It will then clean/label some of the columns
+#You can tell what states you would like to keep
+#Created by Sangam Shrestha
 
 library(haven)
 
