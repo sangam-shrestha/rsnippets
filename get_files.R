@@ -8,11 +8,11 @@
 
 getfiles <- function(file_path, pat){
   tmp1 <- as.data.frame(list.files(path = file_path, pattern = pat, full.names = T, all.files = T))
-  tmp1 = as.data.frame(tmp1[-1,])
+  #tmp1 = as.data.frame(tmp1[-1,])
   colnames(tmp1)[1] = "file_with_path"
   
   tmp2 <- as.data.frame(list.files(path = file_path, pattern = pat, full.names = F, all.files = T))
-  tmp2 <- as.data.frame(tmp2[-1,])
+  #tmp2 <- as.data.frame(tmp2[-1,])
   colnames(tmp2)[1] = "file_with_extension"
   
   tmp3 <- cbind(tmp1, tmp2)
