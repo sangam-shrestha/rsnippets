@@ -16,6 +16,7 @@ getfiles <- function(file_path, pat){
   colnames(tmp2)[1] = "file_with_extension"
   
   tmp3 <- cbind(tmp1, tmp2)
+  rm(tmp1, tmp2)
   
   return(tmp3)
 }
